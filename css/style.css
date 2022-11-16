@@ -1,0 +1,56 @@
+:root {
+  --item-center: 0 auto;
+}
+
+h1 {
+  display: none;
+}
+
+#container {
+  width: 100%;
+  background-image: url(../img/body_bg.gif);
+  /* main */
+}
+#container header {
+  background-image: url(../img/container_bg.png);
+  height: 110px;
+}
+#container header #head-contents {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 960px;
+  margin: var(--item-center);
+}
+#container header #head-contents ul li {
+  display: inline;
+}
+#container main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  margin: var(--item-center);
+  /* #product-left */
+}
+#container main aside#product-left {
+  flex: 0 0 690px;
+}
+#container main aside#product-left .intro-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+#container main aside#product-left .intro-contents #topics {
+  flex: 0 0 50%;
+}
+#container main aside#product-left .intro-contents #topics ul li:nth-child(odd) {
+  background-color: cadetblue;
+}
+#container main aside#product-left .intro-contents #topics ul li:nth-child(even) {
+  padding-left: 1em;
+}
+#container main aside#product-left .intro-contents #ranking {
+  flex: 0 0 50%;
+}
+#container main aside#product-left .intro-contents #ranking ul li .explain {
+  float: right;
+}/*# sourceMappingURL=style.css.map */

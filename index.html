@@ -2,69 +2,71 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>Weblesson05</title>
+        <title>Sweets Oneline Store</title>
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
-    <h1>Weblesson05</h1>
+    <h1>Sweets Shop</h1>
     <div id="container">
         <header>
             <div id="head-contents">
                 <div><img src="./img/logo.png" alt="スウィーツオンラインストア" /></div>
                 <ul>
-                    <li><a href=""><img src="./img/navi_01.jpg" alt="トップページ" /></a></li>
-                    <li><a href=""><img src="./img/navi_02.jpg" alt="はじめての方へ" /></a></li>
-                    <li><a href=""><img src="./img/navi_03.jpg" alt="商品一覧" /></a></li>
-                    <li><a href=""><img src="./img/navi_04.jpg" alt="人気ランキング" /></a></li>
-                    <li><a href=""><img src="./img/navi_05.jpg" alt="お問い合わせ" /></a></li>
+                    <li><a href="./"><img src="./img/navi_01.jpg" alt="トップページ" /></a></li>
+                    <li><a href="./welcome"><img src="./img/navi_02.jpg" alt="はじめての方へ" /></a></li>
+                    <li><a href="./list"><img src="./img/navi_03.jpg" alt="商品一覧" /></a></li>
+                    <li><a href="./ranking"><img src="./img/navi_04.jpg" alt="人気ランキング" /></a></li>
+                    <li><a href="./to-form"><img src="./img/navi_05.jpg" alt="お問い合わせ" /></a></li>
                 </ul>
             </div>
         </header>
         <main>
             <aside id="product-left">
                 <div><img src="./img/main.jpg" alt="見出し画像" class="main-image" /></div>
-                <div id="topics">
-                    <div class="list-title"><img src="./img/title_01.jpg" alt="新着情報" /></div>
-                    <ul>
-                        <li></li>
-                        <li><a href="">秋の新商品を発表いたしました。</a></li>
-                        <li></li>
-                        <li><a href="">秋の新商品を発表いたしました。</a></li>
-                        <li></li>
-                        <li><a href="">秋の新商品を発表いたしました。</a></li>
-                    </ul>
-                </div>
-                <div id="ranking">
-                    <div class="list-title"><img src="./img/title_02.jpg" alt="人気ランキング" /></div>
-                    <ul>
-                        <li>
-                            <a href=""><img src="./img/rank_img_01.jpg" alt="人気ランク1位" class="rank-image" /></a>
-                            <div>
-                                <a href=""><p class="sweets-title">マカロン　１個２３１円～</p></a>
-                                <p class="explain">【焼き菓子】ジャンルで４週連続ランキング１位！</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href=""><img src="./img/rank_img_02.jpg" alt="人気ランク2位" class="rank-image" /></a>
-                            <div>
-                                <a href=""><p class="sweets-title">北海道クッキー</p></a>
-                                <p class="explain">北海道産の材料にこだわったシンプルなクッキー</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href=""><img src="./img/rank_img_03.jpg" alt="人気ランク3位" class="rank-image" /></a>
-                            <div>
-                                <a href=""><p class="sweets-title">アップルパイ</p></a>
-                                <p class="explain">美味しさの秘密は手作りのパイ生地</p>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="intro-contents">
+                    <div id="topics">
+                        <div class="list-title"><img src="./img/title_01.jpg" alt="新着情報" /></div>
+                        <ul>
+                            <li>2011.9.1</li>
+                            <li><a href="./product01">秋の新商品を発表いたしました。</a></li>
+                            <li>2011.9.1</li>
+                            <li><a href="./product02">秋の新商品を発表いたしました。</a></li>
+                            <li>2011.9.1</li>
+                            <li><a href="./product03">秋の新商品を発表いたしました。</a></li>
+                        </ul>
+                    </div>
+                    <div id="ranking">
+                        <div class="list-title"><img src="./img/title_02.jpg" alt="人気ランキング" /></div>
+                        <ul>
+                            <li>
+                                <a href="./list/macarons"><img src="./img/rank_img_01.jpg" alt="人気ランク1位" class="rank-image" /></a>
+                                <div class="explain">
+                                    <a href="./list/macarons"><p class="sweets-title">マカロン　１個２３１円～</p></a>
+                                    <p>【焼き菓子】ジャンルで４週連続ランキング１位！</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="./list/hokkaido-cookie"><img src="./img/rank_img_02.jpg" alt="人気ランク2位" class="rank-image" /></a>
+                                <div class="explain">
+                                    <a href="./list/hokkaido-cookie"><p class="sweets-title">北海道クッキー</p></a>
+                                    <p>北海道産の材料にこだわったシンプルなクッキー</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="./list/apple-pie"><img src="./img/rank_img_03.jpg" alt="人気ランク3位" class="rank-image" /></a>
+                                <div class="explain">
+                                    <a href="./list/apple-pie"><p class="sweets-title">アップルパイ</p></a>
+                                    <p>美味しさの秘密は手作りのパイ生地</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </aside>
             <aside id="shopping-right">
-                <a href=""><img src="./img/btn_01.jpg" alt="買い物かご" /></a>
-                <a href=""><img src="./img/btn_02.jpg" alt="FAQ" /></a>
-                <a href=""><img src="./img/banner_01.jpg" alt="バナー" class="pickup" /></a>
+                <a href="/stock"><img src="./img/btn_01.jpg" alt="買い物かご" /></a>
+                <a href="./faq"><img src="./img/btn_02.jpg" alt="FAQ" /></a>
+                <a href="./list/pudding"><img src="./img/banner_01.jpg" alt="バナー" class="pickup" /></a>
                 <ul>
                     <li>送料はお客様負担となっております。</li>
                     <li>冷蔵、冷凍により同梱できない場合がございます。</li>
