@@ -1,5 +1,6 @@
 :root {
   --item-center: 0 auto;
+  --anchor-reset: underline;
 }
 
 h1 {
@@ -29,11 +30,12 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   width: 960px;
+  background-color: white;
   margin: var(--item-center);
   /* #product-left */
 }
 #container main aside#product-left {
-  flex: 0 0 690px;
+  flex: 0 0 72%;
 }
 #container main aside#product-left .intro-contents {
   display: flex;
@@ -48,9 +50,44 @@ h1 {
 #container main aside#product-left .intro-contents #topics ul li:nth-child(even) {
   padding-left: 1em;
 }
+#container main aside#product-left .intro-contents #topics ul li:nth-child(even) a {
+  -webkit-text-decoration: var(--anchor-reset);
+          text-decoration: var(--anchor-reset);
+}
 #container main aside#product-left .intro-contents #ranking {
   flex: 0 0 50%;
 }
+#container main aside#product-left .intro-contents #ranking a {
+  float: left;
+}
+#container main aside#product-left .intro-contents #ranking ul li {
+  height: 110px;
+}
 #container main aside#product-left .intro-contents #ranking ul li .explain {
   float: right;
+  width: 50%;
+}
+#container main aside#product-left .intro-contents #ranking ul li .explain a {
+  all: initial;
+  -webkit-text-decoration: var(--anchor-reset);
+          text-decoration: var(--anchor-reset);
+}
+#container main aside#shopping-right {
+  flex: 0 0 28%;
+}
+#container main aside#shopping-right a {
+  display: block;
+}
+#container main aside#shopping-right ul li {
+  list-style-type: circle;
+}
+#container main #foot {
+  flex: 0 0 100%;
+  background-image: url(../img/footer_bg.gif);
+  height: 112px;
+}
+#container main #foot p.copyright {
+  color: white;
+  padding-top: 9%;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

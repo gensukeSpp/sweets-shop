@@ -2,6 +2,7 @@
 
 :root{
     --item-center: 0 auto;
+    --anchor-reset: underline;
 }
 
 h1 { display: none; }
@@ -26,9 +27,10 @@ h1 { display: none; }
         display: flex;
         flex-wrap: wrap;
         width: 960px;
+        background-color: white;
         margin: var(--item-center);
         aside#product-left {
-            flex: 0 0 690px;
+            flex: 0 0 72%;
             .intro-contents {
                 display: flex;
                 flex-wrap: wrap;
@@ -39,22 +41,49 @@ h1 { display: none; }
                     }
                     ul li:nth-child(even) {
                         padding-left: 1em;
-
+                        a {
+                            text-decoration: var(--anchor-reset);
+                        }
                     }
                 }
                 #ranking {
                     flex: 0 0 50%;
+                    a {
+                        float: left;
+                    }
                     ul li {
+                        height: 110px;
                         .explain {
                             float: right;
+                            width: 50%;
+                            a {
+                                all: initial;
+                                text-decoration: var(--anchor-reset);
+                            }
                         }
                     }
                 }
         
             }
         }/* #product-left */
-        // aside#shopping-right {
-
-        // }
+        aside#shopping-right {
+            flex: 0 0 28%;
+            a {
+                display: block;
+            }
+            ul li {
+                list-style-type: circle;
+            }
+        }
+        #foot {
+            flex: 0 0 100%;
+            background-image: url(../img/footer_bg.gif);
+            height: 112px;
+            p.copyright {
+                color: white;
+                padding-top: 9%;
+                text-align: center;
+            }
+        }
     }/* main */
 }
