@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --item-center: 0 auto;
   --anchor-reset: underline;
@@ -42,6 +43,7 @@ h1 {
 #container main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 75%;
   background-color: white;
   margin: var(--item-center);
@@ -54,6 +56,7 @@ h1 {
 #container main aside#product-left .intro-contents {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 #container main aside#product-left .intro-contents #topics {
   flex: 0 0 49%;
@@ -65,6 +68,7 @@ h1 {
   background-color: cadetblue;
   margin: var(--item-center);
   margin-top: 11px;
+  font-weight: bold;
 }
 #container main aside#product-left .intro-contents #topics ul li:nth-child(even) {
   padding-left: 1em;
@@ -72,40 +76,56 @@ h1 {
 #container main aside#product-left .intro-contents #topics ul li:nth-child(even) a {
   -webkit-text-decoration: var(--anchor-reset);
           text-decoration: var(--anchor-reset);
+  color: darkgrey;
+  font-size: 11px;
+  margin: 7px 0 6px 0;
 }
 #container main aside#product-left .intro-contents #ranking {
   flex: 0 0 49%;
 }
-#container main aside#product-left .intro-contents #ranking a {
-  float: left;
-}
 #container main aside#product-left .intro-contents #ranking ul li {
   height: 110px;
   margin-bottom: 11px;
+}
+#container main aside#product-left .intro-contents #ranking ul li a {
+  width: min(50%, 165px);
 }
 #container main aside#product-left .intro-contents #ranking ul li .explain {
   float: right;
   width: 49%;
 }
 #container main aside#product-left .intro-contents #ranking ul li .explain a {
-  all: initial;
   -webkit-text-decoration: var(--anchor-reset);
           text-decoration: var(--anchor-reset);
+  -webkit-text-decoration-color: chocolate;
+          text-decoration-color: chocolate;
 }
-#container main aside#product-left .intro-contents #ranking ul li .explain::after {
-  content: "";
-  display: block;
-  clear: both;
+#container main aside#product-left .intro-contents #ranking ul li .explain a p.sweets-title {
+  color: chocolate;
+  font-size: 13px;
+  font-weight: bold;
+}
+#container main aside#product-left .intro-contents #ranking ul li .explain p {
+  color: darkgrey;
+  font-size: 13px;
+  /* 縦中央最適 */
+  display: table-cell;
+  vertical-align: middle;
 }
 #container main aside#shopping-right {
-  flex: 0 0 28%;
+  flex: 0 0 26%;
   margin-top: 20px;
+  padding-left: 2%;
 }
 #container main aside#shopping-right a {
   display: block;
 }
-#container main aside#shopping-right ul li {
+#container main aside#shopping-right ul {
   list-style-type: circle;
+  padding-left: 1.5em;
+}
+#container main aside#shopping-right ul li {
+  font-size: 11px;
 }
 #container main #foot {
   flex: 0 0 100%;
@@ -114,6 +134,7 @@ h1 {
 }
 #container main #foot p.copyright {
   color: white;
+  font-size: 12px;
   padding-top: 9%;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */

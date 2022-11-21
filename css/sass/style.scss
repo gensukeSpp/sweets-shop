@@ -39,6 +39,7 @@ h1 { display: none; }
     main {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         width: 75%;
         background-color: white;
         margin: var(--item-center);
@@ -48,6 +49,7 @@ h1 { display: none; }
             .intro-contents {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: space-between;
                 #topics {
                     flex: 0 0 49%;
                     ul li {
@@ -57,47 +59,72 @@ h1 { display: none; }
                         background-color: cadetblue;
                         margin: var(--item-center);
                         margin-top: 11px;
+                        font-weight: bold;
                     }
                     ul li:nth-child(even) {
                         padding-left: 1em;
                         a {
                             text-decoration: var(--anchor-reset);
+                            color: darkgrey;
+                            font-size: 11px;
+                            margin: 7px 0 6px 0;
                         }
                     }
                 }
                 #ranking {
                     flex: 0 0 49%;
-                    a {
-                        float: left;
-                    }
+                    // a {
+                    //     float: left;
+                    // }
                     ul li {
                         height: 110px;
                         margin-bottom: 11px;
+                        a {
+                            width: min(50%, 165px);
+                        }
                         .explain {
                             float: right;
                             width: 49%;
                             a {
-                                all: initial;
+                                // all: initial;
                                 text-decoration: var(--anchor-reset);
+                                text-decoration-color: chocolate;
+                                p.sweets-title {
+                                    color:chocolate;
+                                    font-size: 13px;
+                                    font-weight: bold;    
+                                }
+                            }
+                            p {
+                                color: darkgrey;
+                                font-size: 13px;
+                                /* 縦中央最適 */
+                                display: table-cell;
+                                vertical-align: middle;
                             }
                         }
-                        .explain::after {
-                            content: "";
-                            display: block;
-                            clear: both;                        
-                        }
+                        // .explain::after {
+                        //     content: "";
+                        //     display: block;
+                        //     clear: both;                        
+                        // }
                     }
                 }
             }
         }/* #product-left */
         aside#shopping-right {
-            flex: 0 0 28%;
+            flex: 0 0 26%;
             margin-top: 20px;
+            padding-left: 2%;
             a {
                 display: block;
             }
-            ul li {
+            ul {
                 list-style-type: circle;
+                padding-left: 1.5em;
+                li {
+                    font-size: 11px;
+                }
             }
         }
         #foot {
@@ -106,6 +133,7 @@ h1 { display: none; }
             height: 112px;
             p.copyright {
                 color: white;
+                font-size: 12px;
                 padding-top: 9%;
                 text-align: center;
             }
