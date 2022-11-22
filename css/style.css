@@ -40,6 +40,24 @@ h1 {
 #container header #head-contents ul li a img {
   width: min(11vw, 140px);
 }
+#container header #head-contents ul li a img:hover {
+  opacity: 0.1;
+}
+#container header #head-contents ul li:nth-child(1) a img {
+  background-image: url(../img/navi_01_hover.jpg);
+}
+#container header #head-contents ul li:nth-child(2) a img {
+  background-image: url(../img/navi_02_hover.jpg);
+}
+#container header #head-contents ul li:nth-child(3) a img {
+  background-image: url(../img/navi_03_hover.jpg);
+}
+#container header #head-contents ul li:nth-child(4) a img {
+  background-image: url(../img/navi_04_hover.jpg);
+}
+#container header #head-contents ul li:nth-child(5) a img {
+  background-image: url(../img/navi_05_hover.jpg);
+}
 #container main {
   display: flex;
   flex-wrap: wrap;

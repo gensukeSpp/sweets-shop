@@ -29,9 +29,18 @@ h1 { display: none; }
                 li {
                 display: inline;
                 margin-right: -6px;
-                a img {
-                    width: min(11vw, 140px);
+                    a img {
+                        width: min(11vw, 140px);
+                        // display: none;
+                    }
+                    a img:hover {
+                        opacity: .1;
+                    }
                 }
+                @for $i from 1 through 5 {
+                    li:nth-child(#{$i}) a img {
+                        background-image: url(../img/navi_0#{$i}_hover.jpg);
+                    }
                 }
             }
         }
