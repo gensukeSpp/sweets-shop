@@ -4,6 +4,10 @@
     --item-center: 0 auto;
     --anchor-reset: underline;
 }
+@mixin bg_size {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 h1 { display: none; }
 #container {
@@ -27,19 +31,19 @@ h1 { display: none; }
                 text-align: right;
                 margin-right: 6px;
                 li {
-                display: inline;
+                display: inline-block;
                 margin-right: -6px;
                     a img {
                         width: min(11vw, 140px);
-                        // display: none;
                     }
                     a img:hover {
                         opacity: .1;
                     }
                 }
                 @for $i from 1 through 5 {
-                    li:nth-child(#{$i}) a img {
+                    li:nth-child(#{$i}) {
                         background-image: url(../img/navi_0#{$i}_hover.jpg);
+                        @include bg_size;
                     }
                 }
             }
@@ -55,6 +59,14 @@ h1 { display: none; }
         aside#product-left {
             flex: 0 0 72%;
             margin-top: 20px;
+            span {
+                display: block;
+                background-image: url(../img/main_bg.jpg);
+                @include bg_size;
+                img:hover {
+                    opacity: .1;
+                }
+            }
             .intro-contents {
                 display: flex;
                 flex-wrap: wrap;
@@ -88,7 +100,7 @@ h1 { display: none; }
                     ul li {
                         height: 110px;
                         margin-bottom: 11px;
-                        a {
+                        a img.rank-image {
                             width: min(50%, 165px);
                         }
                         .explain {
@@ -125,8 +137,25 @@ h1 { display: none; }
             flex: 0 0 26%;
             margin-top: 20px;
             padding-left: 2%;
-            a {
+            @for $i from 1 through 2 {
+                a:nth-child(#{$i}) {
+                    display: block;
+                    width: 99%;
+                    background-image: url(../img/btn_0#{$i}_bg.jpg);
+                    @include bg_size;
+                    img:hover {
+                        opacity: .1;
+                    }    
+                }
+            }
+            a:nth-child(3) {
                 display: block;
+                width: 99%;
+                background-image: url(../img/banner_01_bg.jpg);
+                @include bg_size;
+                img:hover {
+                    opacity: .1;
+                }
             }
             ul {
                 list-style-type: circle;

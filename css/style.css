@@ -34,7 +34,7 @@ h1 {
   margin-right: 6px;
 }
 #container header #head-contents ul li {
-  display: inline;
+  display: inline-block;
   margin-right: -6px;
 }
 #container header #head-contents ul li a img {
@@ -43,20 +43,30 @@ h1 {
 #container header #head-contents ul li a img:hover {
   opacity: 0.1;
 }
-#container header #head-contents ul li:nth-child(1) a img {
+#container header #head-contents ul li:nth-child(1) {
   background-image: url(../img/navi_01_hover.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-#container header #head-contents ul li:nth-child(2) a img {
+#container header #head-contents ul li:nth-child(2) {
   background-image: url(../img/navi_02_hover.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-#container header #head-contents ul li:nth-child(3) a img {
+#container header #head-contents ul li:nth-child(3) {
   background-image: url(../img/navi_03_hover.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-#container header #head-contents ul li:nth-child(4) a img {
+#container header #head-contents ul li:nth-child(4) {
   background-image: url(../img/navi_04_hover.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-#container header #head-contents ul li:nth-child(5) a img {
+#container header #head-contents ul li:nth-child(5) {
   background-image: url(../img/navi_05_hover.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #container main {
   display: flex;
@@ -70,6 +80,15 @@ h1 {
 #container main aside#product-left {
   flex: 0 0 72%;
   margin-top: 20px;
+}
+#container main aside#product-left span {
+  display: block;
+  background-image: url(../img/main_bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#container main aside#product-left span img:hover {
+  opacity: 0.1;
 }
 #container main aside#product-left .intro-contents {
   display: flex;
@@ -105,7 +124,7 @@ h1 {
   height: 110px;
   margin-bottom: 11px;
 }
-#container main aside#product-left .intro-contents #ranking ul li a {
+#container main aside#product-left .intro-contents #ranking ul li a img.rank-image {
   width: min(50%, 165px);
 }
 #container main aside#product-left .intro-contents #ranking ul li .explain {
@@ -135,8 +154,35 @@ h1 {
   margin-top: 20px;
   padding-left: 2%;
 }
-#container main aside#shopping-right a {
+#container main aside#shopping-right a:nth-child(1) {
   display: block;
+  width: 99%;
+  background-image: url(../img/btn_01_bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#container main aside#shopping-right a:nth-child(1) img:hover {
+  opacity: 0.1;
+}
+#container main aside#shopping-right a:nth-child(2) {
+  display: block;
+  width: 99%;
+  background-image: url(../img/btn_02_bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#container main aside#shopping-right a:nth-child(2) img:hover {
+  opacity: 0.1;
+}
+#container main aside#shopping-right a:nth-child(3) {
+  display: block;
+  width: 99%;
+  background-image: url(../img/banner_01_bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#container main aside#shopping-right a:nth-child(3) img:hover {
+  opacity: 0.1;
 }
 #container main aside#shopping-right ul {
   list-style-type: circle;
