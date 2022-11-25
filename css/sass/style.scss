@@ -63,6 +63,9 @@ h1 { display: none; }
                 display: block;
                 background-image: url(../img/main_bg.jpg);
                 @include bg_size;
+                img {
+                    transition: .4s linear;
+                }
                 img:hover {
                     opacity: .1;
                 }
@@ -153,6 +156,9 @@ h1 { display: none; }
                 width: 99%;
                 background-image: url(../img/banner_01_bg.jpg);
                 @include bg_size;
+                img {
+                    transition: .4s linear;
+                }
                 img:hover {
                     opacity: .1;
                 }

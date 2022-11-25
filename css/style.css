@@ -87,6 +87,9 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
 }
+#container main aside#product-left span img {
+  transition: 0.4s linear;
+}
 #container main aside#product-left span img:hover {
   opacity: 0.1;
 }
@@ -180,6 +183,9 @@ h1 {
   background-image: url(../img/banner_01_bg.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+}
+#container main aside#shopping-right a:nth-child(3) img {
+  transition: 0.4s linear;
 }
 #container main aside#shopping-right a:nth-child(3) img:hover {
   opacity: 0.1;
