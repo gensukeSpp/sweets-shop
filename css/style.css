@@ -15,15 +15,19 @@ h1 {
 }
 #container header {
   background-image: url(../img/container_bg.png);
-  height: 110px;
 }
 #container header #head-contents {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
   width: 75%;
+  height: inherit;
   margin: var(--item-center);
+}
+#container header #head-contents > * {
+  position: relative;
+  top: 22%;
 }
 #container header #head-contents div {
   flex: 0 0 24%;
@@ -105,7 +109,7 @@ h1 {
   width: 94%;
 }
 #container main aside#product-left .intro-contents #topics ul li:nth-child(odd) {
-  background-color: cadetblue;
+  background-color: #ECECEC;
   margin: var(--item-center);
   margin-top: 11px;
   font-weight: bold;
@@ -137,11 +141,11 @@ h1 {
 #container main aside#product-left .intro-contents #ranking ul li .explain a {
   -webkit-text-decoration: var(--anchor-reset);
           text-decoration: var(--anchor-reset);
-  -webkit-text-decoration-color: chocolate;
-          text-decoration-color: chocolate;
+  -webkit-text-decoration-color: #513A15;
+          text-decoration-color: #513A15;
 }
 #container main aside#product-left .intro-contents #ranking ul li .explain a p.sweets-title {
-  color: chocolate;
+  color: #513A15;
   font-size: 13px;
   font-weight: bold;
 }
@@ -195,7 +199,9 @@ h1 {
   padding-left: 1.5em;
 }
 #container main aside#shopping-right ul li {
-  font-size: 11px;
+  font-size: 12px;
+  margin-top: 17px;
+  margin-right: 1em;
 }
 #container main #foot {
   flex: 0 0 100%;
