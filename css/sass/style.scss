@@ -15,7 +15,7 @@ h1 { display: none; }
     background-image: url(../img/body_bg.gif);
     header {
         background-image: url(../img/container_bg.png);
-        // max-height: 150px;
+        background-size: contain;
         #head-contents {
             display: flex;
             flex-wrap: wrap;
@@ -24,10 +24,8 @@ h1 { display: none; }
             width: 75%;
             height: inherit;
             margin: var(--item-center);
-            >* {
-                position: relative;
-                top: 22%;
-            }
+            position: relative;
+            top: 11px;
             div {
                 flex: 0 0 24%;
             }
@@ -181,12 +179,15 @@ h1 { display: none; }
         #foot {
             flex: 0 0 100%;
             background-image: url(../img/footer_bg.gif);
-            height: 112px;
+            height: 7vw;
             p.copyright {
+                // display: table-cell;
+                // vertical-align: middle;
                 color: white;
                 font-size: 12px;
-                padding-top: 9%;
                 text-align: center;
+                position: relative;
+                top: 70%;                
             }
         }
     }/* main */

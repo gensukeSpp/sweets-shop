@@ -15,6 +15,7 @@ h1 {
 }
 #container header {
   background-image: url(../img/container_bg.png);
+  background-size: contain;
 }
 #container header #head-contents {
   display: flex;
@@ -24,10 +25,8 @@ h1 {
   width: 75%;
   height: inherit;
   margin: var(--item-center);
-}
-#container header #head-contents > * {
   position: relative;
-  top: 22%;
+  top: 11px;
 }
 #container header #head-contents div {
   flex: 0 0 24%;
@@ -206,11 +205,12 @@ h1 {
 #container main #foot {
   flex: 0 0 100%;
   background-image: url(../img/footer_bg.gif);
-  height: 112px;
+  height: 7vw;
 }
 #container main #foot p.copyright {
   color: white;
   font-size: 12px;
-  padding-top: 9%;
   text-align: center;
+  position: relative;
+  top: 70%;
 }/*# sourceMappingURL=style.css.map */
