@@ -8,6 +8,14 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+@mixin img-expand {
+    .list-title {
+        width: 100%;
+        img {
+            width: inherit;
+        }
+    }
+}
 
 h1 { display: none; }
 #container {
@@ -66,7 +74,9 @@ h1 { display: none; }
                 display: block;
                 background-image: url(../img/main_bg.jpg);
                 @include bg_size;
+                // max-width: 690px;
                 img {
+                    width: 100%;
                     transition: .4s linear;
                 }
                 img:hover {
@@ -79,6 +89,7 @@ h1 { display: none; }
                 justify-content: space-between;
                 #topics {
                     flex: 0 0 49%;
+                    @include img-expand;
                     ul li {
                         width: 94%;
                     }
@@ -92,7 +103,7 @@ h1 { display: none; }
                         padding-left: 1em;
                         a {
                             text-decoration: var(--anchor-reset);
-                            color: darkgrey;
+                            color: #686868;
                             font-size: 11px;
                             margin: 7px 0 6px 0;
                         }
@@ -103,6 +114,7 @@ h1 { display: none; }
                     // a {
                     //     float: left;
                     // }
+                    @include img-expand;
                     ul li {
                         height: 110px;
                         margin-bottom: 11px;
@@ -123,7 +135,7 @@ h1 { display: none; }
                                 }
                             }
                             p {
-                                color: darkgrey;
+                                color: #686868;
                                 font-size: 13px;
                                 /* 縦中央最適 */
                                 display: table-cell;
@@ -149,6 +161,7 @@ h1 { display: none; }
                     width: 99%;
                     background-image: url(../img/btn_0#{$i}_bg.jpg);
                     @include bg_size;
+                    max-width: 220px;
                     img:hover {
                         opacity: .1;
                     }    
@@ -170,9 +183,9 @@ h1 { display: none; }
                 list-style-type: circle;
                 padding-left: 1.5em;
                 li {
-                    font-size: 12px;
+                    font-size: 11px;
                     margin-top: 17px;
-                    margin-right: 1em;
+                    margin-right: 2em;
                 }
             }
         }
